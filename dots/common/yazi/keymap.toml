@@ -1,0 +1,156 @@
+[[mgr.prepend_keymap]]
+on   = "f"
+run  = "plugin jump-to-char"
+desc = "Jump to char"
+
+[[mgr.prepend_keymap]]
+on   = "F"
+run  = "filter"
+desc = "Filter files"
+
+[[mgr.prepend_keymap]]
+on = "P"
+run  = "plugin toggle-pane max-preview"
+desc = "Maximize or restore the preview pane"
+
+[[mgr.prepend_keymap]]
+on = "Q"
+run  = "quit"
+desc = "Quit Yazi"
+
+[[mgr.prepend_keymap]]
+on = "*"
+run = "plugin bunny"
+desc = "Start bunny.yazi"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "p" ]
+run = "plugin clip-jump"
+desc = "Jump to Clipped Path"
+
+# TAB-MOTIONS
+[[mgr.prepend_keymap]]
+on   = "A"
+run  = "tab_create --current"
+desc = "New Tab -cur-d"
+
+[[mgr.prepend_keymap]]
+on = "q"
+run  = "tab_close"
+desc = "Close Current Tab"
+
+[[mgr.prepend_keymap]]
+on   = "^"
+run  = "tab_switch --relative -1"
+desc = "Switch to prev Tab"
+
+[[mgr.prepend_keymap]]
+on   = "$"
+run  = "tab_switch --relative 1"
+desc = "Switch to next Tab"
+
+[[mgr.prepend_keymap]]
+on   = [ "t", "h" ]
+run  = "tab_swap -1"
+desc = "Swap prev Tab"
+
+[[mgr.prepend_keymap]]
+on   = [ "t", "l" ]
+run  = "tab_swap 1"
+desc = "Swap next Tab"
+
+[[mgr.prepend_keymap]]
+on   = [ "t", "1" ]
+run  = "tab_switch 0"
+desc = "Switch to Tab[1]"
+
+[[mgr.prepend_keymap]]
+on   = [ "t", "2" ]
+run  = "tab_switch 1"
+desc = "Switch to Tab[2]"
+
+[[mgr.prepend_keymap]]
+on   = [ "t", "3" ]
+run  = "tab_switch 2"
+desc = "Switch to Tab[3]"
+
+[[mgr.prepend_keymap]]
+on   = [ "t", "4" ]
+run  = "tab_switch 3"
+desc = "Switch to Tab[4]"
+
+[[mgr.prepend_keymap]]
+on   = [ "t", "5" ]
+run  = "tab_switch 4"
+desc = "Switch to Tab[5]"
+
+[[mgr.prepend_keymap]]
+on   = [ "t", "6" ]
+run  = "tab_switch 5"
+desc = "Switch to Tab[6]"
+
+[[mgr.prepend_keymap]]
+on   = [ "t", "7" ]
+run  = "tab_switch 6"
+desc = "Switch to Tab[7]"
+
+[[mgr.prepend_keymap]]
+on   = [ "t", "8" ]
+run  = "tab_switch 7"
+desc = "Switch to Tab[8]"
+
+[[mgr.prepend_keymap]]
+on   = [ "t", "9" ]
+run  = "tab_switch 8"
+desc = "Switch to Tab[9]"
+
+# RELATIVE-MOTIONS
+[[mgr.prepend_keymap]]
+on = [ "1" ]
+run = "plugin relative-motions 1"
+desc = "Move in relative steps"
+
+[[mgr.prepend_keymap]]
+on = [ "2" ]
+run = "plugin relative-motions 2"
+desc = "Move in relative steps"
+
+[[mgr.prepend_keymap]]
+on = [ "3" ]
+run = "plugin relative-motions 3"
+desc = "Move in relative steps"
+
+[[mgr.prepend_keymap]]
+on = [ "4" ]
+run = "plugin relative-motions 4"
+desc = "Move in relative steps"
+
+[[mgr.prepend_keymap]]
+on = [ "5" ]
+run = "plugin relative-motions 5"
+desc = "Move in relative steps"
+
+[[mgr.prepend_keymap]]
+on = [ "6" ]
+run = "plugin relative-motions 6"
+desc = "Move in relative steps"
+
+[[mgr.prepend_keymap]]
+on = [ "7" ]
+run = "plugin relative-motions 7"
+desc = "Move in relative steps"
+
+[[mgr.prepend_keymap]]
+on = [ "8" ]
+run = "plugin relative-motions 8"
+desc = "Move in relative steps"
+
+[[mgr.prepend_keymap]]
+on = [ "9" ]
+run = "plugin relative-motions 9"
+desc = "Move in relative steps"
+
+[[mgr.prepend_keymap]]
+on = [ "M" ]
+run = 'shell -- pkill mpv'
+desc = "Stop Mpv"

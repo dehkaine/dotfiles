@@ -1,0 +1,33 @@
+[opener]
+text = [
+	{ run = 'nvim "$@"', block = true, desc = "Nvim" }
+]
+
+vd_tab_profile = [
+  { run = 'osascript /Users/kouteki/.config/yazi/vd_new_tab.applescript "$@"', orphan = true, desc = "VisiData" }
+]
+
+mpv_audio = [
+	{ run = '/opt/homebrew/bin/mpv --vid=no --audio-display=no --really-quiet "$@"', orphan = true, desc = "MpvAudio" }
+]
+
+[open]
+prepend_rules = [
+	{ name = "*.csv", use = "vd_tab_profile" },
+	{ name = "*.xlsx", use = "vd_tab_profile" },
+	{ mime = "audio/*", use = "mpv_audio" },
+# edit with Nvim
+	{ name = "*.rs", use = "text" },
+	{ name = "*.toml", use = "text" },
+	{ name = "*.json", use = "text" },
+	{ name = "*.md", use = "text" },
+	{ mime = "text/*", use = "text" }
+]
+
+[mgr]
+ratio = [2, 4, 3]
+
+[preview]
+max_width = 2200
+max_height = 2200
+ueberzug_scale = 1.0
