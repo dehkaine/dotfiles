@@ -1,0 +1,87 @@
+# promptToReturnFromSubprocess: false
+
+gui:
+  language: en
+  sidePanelWidth: 0.45
+  expandFocusedSidePanel: true
+  expandedSidePanelWeight: 4
+  theme:
+    activeBorderColor:
+      - '#c7f0ad'
+      - bold
+    inactiveBorderColor:
+      - '#899aa6'
+    searchingActiveBorderColor:
+      - '#83C092'
+      - bold
+    optionsTextColor:
+      - '#6c757c'
+    selectedLineBgColor:
+      - '#1f252c'
+    inactiveViewSelectedLineBgColor:
+      - '#6c757c'
+      - bold
+    # Foreground color of copied commit
+    cherryPickedCommitFgColor:
+      - '#85B0AA'
+    # Background color of copied commit
+    cherryPickedCommitBgColor:
+      - '#85B0AA'
+    markedBaseCommitFgColor:
+      - '#85B0AA'
+    markedBaseCommitBgColor:
+      - '#DBBC7F'
+    unstagedChangesColor:
+      - '#E67E80'
+    defaultFgColor:
+      - '#9CBDB8'
+  authorColors:
+    'Dean': '#A7ABED'
+    '*': '#85B0AA'
+
+git:
+  commit:
+    autoWrapCommitMessage: true
+  paging: 
+    pager: delta --paging=never
+    # pager: "cat"
+    # pager: ""
+
+
+keybinding:
+  universal:
+    return: <esc>
+    prevTab: '<'
+    nextTab: '>'
+    nextScreenMode: '*'
+    prevScreenMode: '#'
+
+    prevBlock: 'K'
+    nextBlock: 'J'
+    prevBlock-alt: ''
+    nextBlock-alt: ''
+    prevBlock-alt2: ''
+    nextBlock-alt2: ''
+
+    scrollLeft: 'H'
+    scrollRight: 'L'
+    scrollUpMain-alt2: ''
+    scrollDownMain-alt2: ''
+    gotoTop: '^'
+    gotoBottom: '$'
+
+    goInto: 'l'
+    # select: 'w'
+    focusMainView: <tab>
+    filteringMenu: <c-f>
+
+    diffingMenu: <c-d>
+    diffingMenu-alt: ''
+
+  files:
+    findBaseCommitForFixup: ''
+    commitChangesWithoutHook: ''
+    expandAll: '+'
+
+  commits:
+    openLogMenu: <c-s>
