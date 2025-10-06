@@ -36,7 +36,7 @@ desc = "New Tab -cur-d"
 
 [[mgr.prepend_keymap]]
 on = "q"
-run  = "tab_close"
+run  = "close"
 desc = "Close Current Tab"
 
 [[mgr.prepend_keymap]]

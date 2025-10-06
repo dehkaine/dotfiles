@@ -2,6 +2,7 @@
 
 local map = vim.keymap.set
 local ns  = { noremap = true, silent = true }
+local rs  = { remap   = true, silent = true }
 
 -- Leader key
 vim.g.mapleader = " "
@@ -10,7 +11,7 @@ vim.g.mapleader = " "
 map("n", "Q", ":q<CR>", ns)
 map("n", "<leader>qq", ":q<CR>", ns)
 map("n", "<leader>fq", ":q!<CR>", ns)
-map("n", "<leader>qw", ":wq<CR>", ns)
+map("n", "<leader>W", ":wq<CR>", ns)
 map("n", "<leader>w" , ":w<CR>", ns)
 
 -- Quick edit nvim config
@@ -60,6 +61,11 @@ map("i", "<C-CR>", "<Esc>o", { noremap = true })
 map("n", "<leader>dd", [["_dd]], ns)
 map("n", "<leader>cc", [["_cc]], ns)
 
--- Move current line (Normal)
+-- Move current line
 map("n", "<A-i>", ":m .-2<CR>==", ns)  -- Up
 map("n", "<A-k>", ":m .+1<CR>==", ns)  -- Down
+
+-- Comment
+map("n", "co", "gcc", rs)
+map("v", "co", "gc", rs)
+
