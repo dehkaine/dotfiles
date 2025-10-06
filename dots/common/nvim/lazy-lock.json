@@ -1,4 +1,8 @@
 {
+  "coc-explorer": { "branch": "master", "commit": "62b941ca81f2a990acaab4b62e8fd46bdb9e6d81" },
+  "coc.nvim": { "branch": "release", "commit": "db6c23a19f7d39a2ba6f25c78d2e8ccd8e8db5ef" },
   "gruvbox-material": { "branch": "master", "commit": "834dbf21836862300ced7444db4262b796330ab7" },
-  "lazy.nvim": { "branch": "main", "commit": "59334064f8604ca073791c25dcc5c9698865406e" }
+  "lazy.nvim": { "branch": "main", "commit": "59334064f8604ca073791c25dcc5c9698865406e" },
+  "lazygit.nvim": { "branch": "main", "commit": "2305deed25bc61b866d5d39189e9105a45cf1cfb" },
+  "smear-cursor.nvim": { "branch": "main", "commit": "abfa5835920b1d76c0e24e1465a618ad914be90a" }
 }

@@ -10,8 +10,8 @@ require("editor.cursor")
 require("editor.tab")
 require("editor.window")
 
--- theme
-require("theme.terminal_colors")
+-- set terminal color
+require("themes.terminal_colors")
 
 -- plugins
-require("plugins")
+require("plug_libs")

@@ -21,6 +21,7 @@ prepend_rules = [
 	{ name = "*.toml", use = "text" },
 	{ name = "*.json", use = "text" },
 	{ name = "*.md", use = "text" },
+	{ name = "*.lua", use = "text" },
 	{ mime = "text/*", use = "text" }
 ]
 

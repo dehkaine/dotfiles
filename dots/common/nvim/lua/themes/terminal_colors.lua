@@ -21,3 +21,7 @@ local t = {
 for i, hex in pairs(t) do
   vim.g["terminal_color_" .. i] = hex
 end
+
+-- Enable true color support before loading colorscheme
+vim.opt.termguicolors = true
+vim.env.NVIM_TUI_ENABLE_TRUE_COLOR = 1

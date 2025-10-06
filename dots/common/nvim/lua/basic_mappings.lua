@@ -7,6 +7,9 @@ local rs  = { remap   = true, silent = true }
 -- Leader key
 vim.g.mapleader = " "
 
+-- LazyNvim
+map("n", "<leader>lz", ":Lazy<CR>", ns)
+
 -- Save and quit
 map("n", "Q", ":q<CR>", ns)
 map("n", "<leader>qq", ":q<CR>", ns)
