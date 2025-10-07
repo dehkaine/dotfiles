@@ -20,8 +20,8 @@ map("n", "<leader>sl",          ":set splitright<CR>:vsplit<CR>", ns)
 -- Resize (arrow keys)
 map("n", "<Up>",    ":res +5<CR>",              ns)
 map("n", "<Down>",  ":res -5<CR>",              ns)
-map("n", "<Left>",  ":vertical resize-5<CR>",   ns)
-map("n", "<Right>", ":vertical resize+5<CR>",   ns)
+map("n", "C-<Left>",  ":vertical resize-5<CR>",   ns)
+map("n", "C-<Right>", ":vertical resize+5<CR>",   ns)
 
 -- Rotate layout
 map("n", "<leader>rwv", "<C-w>b<C-w>K", ns)

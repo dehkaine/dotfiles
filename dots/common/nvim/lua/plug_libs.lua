@@ -16,15 +16,18 @@ require("lazy").setup({
 	spec =  {
 		-- themes
 		{ import = "themes.gruvbox" },
+		{ import = "themes.statusline" },
 		-- interaction
 		{ import = "interaction.smear_cursor" },
 		-- plugins
-		{ import = "plugins.coc" },
 		{ import = "plugins.git" },
+		{ import = "plugins.coc" },
 	},
 	-- defaults = { lazy = true },
 	-- { "theniceboy/nvim-deus" },
 })
+
+vim.o.lazyredraw = false
 
 -- vim.cmd("colorscheme deus")
 -- vim.api.nvim_set_hl(0, "lCursor",  { fg = "#ebbc4e", bg = "#ffcc00" })
