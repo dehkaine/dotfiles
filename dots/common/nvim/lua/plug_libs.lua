@@ -18,10 +18,13 @@ require("lazy").setup({
 		{ import = "themes.gruvbox" },
 		{ import = "themes.statusline" },
 		-- interaction
-		{ import = "interaction.smear_cursor" },
+		{ import = "interaction.cursor" },
 		-- plugins
 		{ import = "plugins.git" },
 		{ import = "plugins.coc" },
+		{ import = "plugins.fzf" },
+		-- render
+		{ import = "render.markdown" },
 	},
 	-- defaults = { lazy = true },
 	-- { "theniceboy/nvim-deus" },

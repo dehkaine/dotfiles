@@ -41,7 +41,7 @@ return {
 			map("n", "]g", "<Plug>(coc-diagnostic-next)", opts)
 
 			-- Hover Function
-			map("n", "K", function()
+			map("n", "[k", function()
 			if vim.fn.CocActionAsync("doHover") == 0 then
 				vim.cmd("lua vim.lsp.buf.hover()")
 			end

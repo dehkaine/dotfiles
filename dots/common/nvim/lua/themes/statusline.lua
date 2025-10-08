@@ -20,6 +20,7 @@ return {
 					theme = theme,
 					icons_enabled = true,
 					globalstatus = true,
+					always_show_tabline = false,
 					section_separators = { left = "", right = "" },
 					component_separators = { left = ">", right = "<" },
 					disabled_filetypes = {
@@ -45,7 +46,10 @@ return {
 				lualine_y = {},
 				lualine_z = {},
 			},
-			tabline = {},
+			tabline = {
+				lualine_a = { { "filename", path = 1 } },
+				lualine_b = { "tabs" },
+			},
 			extensions = { "fzf", "quickfix", "man", "nvim-tree", "lazy", "toggleterm" },
 			})
 		end,
@@ -70,6 +74,17 @@ return {
 				view_history = "messages",
 				view_search = "virtualtext",
 			},
+			popupmenu =  {
+				enable = true,
+				backend = "nui",
+			},
+			presets =  {
+				bottom_search = false,
+				command_palette = false,
+				long_message_to_split = false,
+				inc_rename = false,
+				lsp_doc_border = false,
+			}
 		},
 	},
 }

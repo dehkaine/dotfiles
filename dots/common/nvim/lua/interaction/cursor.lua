@@ -14,4 +14,16 @@ return {
 			})
 		end,
 	},
+	{
+		"declancm/cinnamon.nvim",
+		opts = {
+			keymaps = { basic = true, extra = true },
+			options = {
+				mode = "cursor",
+				delay = 4,
+				step_size = { vertical = 1, horizontal = 2 },
+				max_delta = { line = false, colum = false, time = 1000 }
+			}
+		}
+	}
 }
