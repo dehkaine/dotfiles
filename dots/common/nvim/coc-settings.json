@@ -23,6 +23,11 @@
 			}
 		}
 	},
+	// coc-snippets
+	"snippets.textmateSnippetsRoots": ["~/.config/nvim/lua/snippets"],
+	"snippets.autoTrigger": true,
+	"snippets.ultisnips.enable" : false,
+	"snippets.triggerCharacters": [],
 	// coc-explorer
 	"explorer.file.column.indent.indentLine": true,
 	"explorer.file.showHiddenFiles": true,

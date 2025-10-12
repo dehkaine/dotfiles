@@ -1,5 +1,3 @@
-local snippets = {}
-
 local function i_map( key, cmdline )
 	local prefix = ","
 	local cmd = prefix..key
@@ -35,5 +33,3 @@ i_map( "t", "- [ ] " )
 -- jump to <++> placeholder
 i_map( "f", [[<Esc>/<++><CR>:nohlsearch<CR>"_c4l]] )
 i_map( "a", [[<Esc>/ <++><CR>:nohlsearch<CR>"_c5l]] )
-
-return snippets

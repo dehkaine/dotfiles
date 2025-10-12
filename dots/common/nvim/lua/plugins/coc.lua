@@ -14,6 +14,7 @@ return {
 				"coc-toml",
 				"coc-yaml",
 				"coc-lua",
+				"coc-snippets",
 				"coc-explorer",
 			}
 		end,
@@ -21,7 +22,7 @@ return {
 		config = function()
 			local map = vim.keymap.set
 			local opts = { silent = true, noremap = false }
-			local cmplOpts = { silent = true, noremap = true, expr = true }
+			local cmplOpts = { silent = true, noremap = true, expr = true, replace_keycodes = false }
 		-- 
 		-- ==========  Key Mappings  ==========
 		-- 
@@ -47,11 +48,16 @@ return {
 			end
 			end, { silent = true })
 
+			-- Snippets
+			vim.keymap.set("i", "<C-s>", "<Plug>(coc-snippets-expand)", { silent = true } )
+			vim.keymap.set("i", "<C-n>", "<Plug>(coc-snippets-expand-jump)", { silent = true } )
+			vim.keymap.set("i", "<C-N>", "<Plug>(coc-snippets-jump-prev)", { silent = true } )
+
 			-- Completion
 			-- map("i", "<Up>",    [[coc#pum#visible() ? coc#pum#prev(1) : "\<Up>"]],      cmplOpts)
 			-- map("i", "<Down>",  [[coc#pum#visible() ? coc#pum#next(1) : "\<Down>"]],    cmplOpts)
-			-- map("i", "<Left>", [[coc#pum#visible() ? coc#pum#cancel() : "\<Left>"]],   cmplOpts)
-			map("i", "<CR>", [[coc#pum#visible() ? coc#pum#confirm() : "\<CR>"]], cmplOpts)
+			map("i", "<Left>", [[coc#pum#visible() ? coc#pum#cancel() : "\<Left>"]],   cmplOpts)
+			map("i", "<Right>", [[coc#pum#visible() ? coc#pum#confirm() : "\<Right>"]], cmplOpts)
 
 			--
 			-- ==========  Highlighting & Signature  ==========

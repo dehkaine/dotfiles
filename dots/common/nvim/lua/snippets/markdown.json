@@ -1,0 +1,27 @@
+{
+  "Heading 1": {
+    "prefix": ["h1"],
+    "body": ["# ${1:Title}", "$0"],
+    "description": "Markdown h1 heading"
+  },
+  "Heading 2": {
+    "prefix": ["h2"],
+    "body": ["## ${1:Title}", "$0"],
+    "description": "Markdown h2 heading"
+  },
+  "Bold text": {
+    "prefix": ["/b"],
+    "body": ["**${1:text}**$0"],
+    "description": "Bold in markdown"
+  },
+  "Code block": {
+    "prefix": ["/c"],
+    "body": ["```", "${1:code}", "```", "$0"],
+    "description": "Fenced code block"
+  },
+  "Checkbox": {
+    "prefix": ["/t"],
+    "body": ["- [${1| |x|}] ${2:task}$0"],
+    "description": "Markdown checkbox"
+  }
+}
