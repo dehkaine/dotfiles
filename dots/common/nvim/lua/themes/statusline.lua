@@ -86,5 +86,19 @@ return {
 				lsp_doc_border = false,
 			}
 		},
+		keys = {
+			{
+				"<leader>cmd", mode = "n", silent = true,
+				function()
+					if vim.g._noice_enabled == false then
+						require("noice").cmd("enable")
+						vim.g._noice_enabled = true
+					else
+						require("noice").cmd("disable")
+						vim.g._noice_enabled = false
+					end
+				end,
+			}
+		},
 	},
 }

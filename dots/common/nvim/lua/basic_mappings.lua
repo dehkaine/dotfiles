@@ -6,6 +6,8 @@ local rs  = { remap   = true, silent = true }
 
 -- Leader key
 vim.g.mapleader = " "
+vim.g.maplocalleader = vim.api.nvim_replace_termcodes("<BS>", true, true, true)
+-- vim.g.maplocalleader = "-"
 
 -- LazyNvim
 map("n", "<leader>lz", ":Lazy<CR>", ns)

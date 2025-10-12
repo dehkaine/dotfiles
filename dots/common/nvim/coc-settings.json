@@ -13,7 +13,7 @@
 	// lua
 	"Lua": {
 		"diagnostics":  {
-			"globals": ["vim"]
+			"globals": [ "vim", "hs" ]
 		},
 		"workspace": {
 			"library": {
