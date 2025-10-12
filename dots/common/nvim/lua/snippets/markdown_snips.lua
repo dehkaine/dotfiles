@@ -1,7 +1,7 @@
 local function i_map( key, cmdline )
 	local prefix = ","
 	local cmd = prefix..key
-	vim.keymap.set( "i", cmd, cmdline, { buffer = true, noremap = true } )
+	vim.keymap.set( "i", cmd, cmdline, { buffer = true, noremap = true, silent = true} )
 	-- vim.keymap.set( "i", "/"..key, cmdline, { buffer = true, noremap = true } )
 end
 

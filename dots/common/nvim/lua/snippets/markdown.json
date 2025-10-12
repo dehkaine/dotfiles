@@ -10,14 +10,14 @@
     "description": "Markdown h2 heading"
   },
   "Bold text": {
-    "prefix": ["/b"],
+    "prefix": ["b"],
     "body": ["**${1:text}**$0"],
     "description": "Bold in markdown"
   },
   "Code block": {
-    "prefix": ["/c"],
-    "body": ["```", "${1:code}", "```", "$0"],
-    "description": "Fenced code block"
+    "prefix": ["c"],
+    "body": ["```${1:PDL}", "${2:code}", "```", "$0"],
+    "description": "MD Code block"
   },
   "Checkbox": {
     "prefix": ["/t"],
