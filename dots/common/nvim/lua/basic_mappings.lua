@@ -32,9 +32,15 @@ do
   })
 end
 
+-- redo
+map("n", "<S-u>", "<C-r>", ns)
+
 -- System clipboard
 map("n", "<leader>Y", '"+yy', ns)
 map("v", "Y", '"+y', { noremap = true })
+
+-- Last Buffer
+map("n", "<leader>#", ":b#<CR>", ns)
 
 -- Better indenting
 map("n", ",.", "%", { noremap = true })
@@ -65,6 +71,11 @@ map("i", "<C-CR>", "<Esc>o", { noremap = true })
 -- black hole register for delete and change
 map("n", "<leader>dd", [["_dd]], ns)
 map("n", "<leader>cc", [["_cc]], ns)
+
+-- Cursor Movement
+map("n", "<S-k>", "7gk", ns)
+map("n", "<S-j>", "7gj", ns)
+map("n", "<leader>J", "J", ns)
 
 -- Move current line
 map("n", "<A-i>", ":m .-2<CR>==", ns)  -- Up

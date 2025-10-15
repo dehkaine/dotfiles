@@ -3,6 +3,7 @@
 -- ===================
 
 require("basic_mappings")
+require("snippets.common")
 
 -- editor
 require("editor.options")

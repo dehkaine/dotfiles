@@ -70,8 +70,14 @@ return {
 			-- set(0, "RenderMarkdownH1", { fg = "#ebdbb2", bold = true })
 
 			set(0, "RenderMarkdownQuote6", { fg = "#D3869B", bold = true })
+			set(0, "RenderMarkdownBullet", { fg = "#948A79" })
+			set(0, "RenderMarkdownUnchecked", { fg = "#FB4934" })
+			set(0, "RenderMarkdownChecked", { fg = "#8EC07C" })
 
-			set(0, "RenderMarkdownCodeBorder", { fg = "#504945" })
+			set(0, "RenderMarkdownCode", { fg = "#8EC07C", bg = "#161819" })
+			set(0, "RenderMarkdownCodeInfo", { fg = "#8EC07C", bg = "#161819" })
+			set(0, "RenderMarkdownCodeInline", { fg = "#ffffff", bg = "#303436" })
+			set(0, "RenderMarkdownCodeBorder", { fg = "#D3869B", bg = "#161819" })
 		end,
 		keys = {
 			-- { "<leader>mr", "<cmd>RenderMarkdown toggle<CR>", desc = "render-markdown: Toggle" },

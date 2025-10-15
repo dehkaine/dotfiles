@@ -50,8 +50,6 @@ return {
 
 			-- Snippets
 			vim.keymap.set("i", "<C-s>", "<Plug>(coc-snippets-expand)", { silent = true } )
-			-- vim.keymap.set("i", ",.", "<Plug>(coc-snippets-expand-jump)", { silent = true } )
-			-- vim.keymap.set("i", ",,", "<Plug>(coc-snippets-jump-prev)", { silent = true } )
 			-- vim.keymap.set({"i","s"}, "<C-n>", "<Plug>(coc-snippets-expand-jump)", { silent = true } )
 			-- vim.keymap.set({"i","s"}, "<C-a>", "<Plug>(coc-snippets-jump-prev)", { silent = true } )
 			vim.g.coc_snippet_next = "<Tab>"

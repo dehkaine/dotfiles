@@ -25,5 +25,29 @@ return {
 				max_delta = { line = false, colum = false, time = 1000 }
 			}
 		}
+	},
+	{
+		"jake-stewart/multicursor.nvim",
+		 event = "VeryLazy",
+		 branch = "1.0",
+		 config = function()
+			 local mc = require("multicursor-nvim")
+			 mc.setup()
+			 local map = vim.keymap.set
+
+			 -- Simple Add/Del Cursor
+			 map({"n", "v"}, "<leader>m", mc.toggleCursor)
+
+			 -- Enable/Disable Multi-Cursor
+			 map({"n", "v"}, "<Esc>", function()
+				if not mc.cursorsEnabled() then
+					mc.enableCursors()
+				elseif mc.hasCursors() then
+					mc.clearCursors()
+				else
+					-- Normal Esc
+				end
+			end)
+		end
 	}
 }
