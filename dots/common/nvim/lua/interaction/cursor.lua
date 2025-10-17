@@ -48,6 +48,14 @@ return {
 					-- Normal Esc
 				end
 			end)
+
+			map({"n", "v"}, "<leader>am", function() mc.lineAddCursor(1) end)
+			map({"n", "v"}, "<leader>aM", function() mc.lineAddCursor(-1) end)
+			map({"n", "v"}, "<leader>sm", function() mc.lineSkipCursor(1) end)
+			map({"n", "v"}, "<leader>sM", function() mc.lineSkipCursor(-1) end)
+
+			map({"n", "v"}, "<leader>nm", function() mc.matchAddCursor(1) end)
+			map({"n", "v"}, "<leader>nM", function() mc.matchAddCursor(-1) end)
 		end
 	}
 }

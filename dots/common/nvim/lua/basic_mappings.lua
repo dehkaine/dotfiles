@@ -85,3 +85,13 @@ map("n", "<A-k>", ":m .+1<CR>==", ns)  -- Down
 map("n", "co", "gcc", rs)
 map("v", "co", "gc", rs)
 
+-- Set Caps Case
+map("n", "<leader>sc", "wb~", ns)
+map("n", "<leader>sal", "guiw", ns)
+map("n", "<leader>sau", "gUiw", ns)
+
+-- Jump to Mark{char}
+map("n", "gm", function()
+	local ch = vim.fn.getcharstr()
+	if ch and ch ~= "" then vim.cmd("normal! `" .. ch) end
+end, ns)

@@ -6,6 +6,7 @@ end
 
 -- function
 i_map( "F", "function()<CR><++><CR>end<CR><++><Esc>3k$i" )
+i_map( "lf", "local function()<CR><++><CR>end<CR><++><Esc>3k$i" )
 
 -- if..end
 i_map( "if", "if then<CR><++><CR>end<CR><++><Esc>3k$Ffa " )
