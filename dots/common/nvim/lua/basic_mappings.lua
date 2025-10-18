@@ -95,3 +95,12 @@ map("n", "gm", function()
 	local ch = vim.fn.getcharstr()
 	if ch and ch ~= "" then vim.cmd("normal! `" .. ch) end
 end, ns)
+
+-- Recording
+local function toggle_record()
+	local rec = vim.fn.reg_recording()
+	if rec ~= "" then vim.cmd("normal! q") return end
+	local reg = vim.fn.getcharstr()
+	if reg ~= "" then vim.cmd("normal! q" .. reg) end
+end
+map("n", "R", toggle_record, ns)

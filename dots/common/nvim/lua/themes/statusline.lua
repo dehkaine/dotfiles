@@ -57,6 +57,44 @@ return {
 	{
 		"folke/noice.nvim",
 		event = "VeryLazy",
+		dependencies = {
+			"rcarriga/nvim-notify",
+			opts = {
+				timeout = 5000,
+				topdown = true,
+				stages = "static",
+				render = "compact",
+				minimum_width = 60,
+				on_open = function(win)
+					vim.api.nvim_win_set_config(win, { border = "rounded", width = 60 })
+					vim.wo[win].wrap = true
+					vim.wo[win].linebreak = true
+					vim.wo[win].breakindent = true
+				end,
+			},
+			config = function(_, opts)
+				local notify = require("notify")
+				notify.setup(opts)
+				local C = {
+					border = "#303436",
+					body = "#D0C39F",
+				}
+				local function set_notify_highlights()
+					vim.api.nvim_set_hl(0, "NotifyBorderUnified", { fg = C.border, bg = "NONE" })
+					vim.api.nvim_set_hl(0, "NotifyBodyUnified", { fg = C.body, bg = "NONE" })
+					for _, lvl in ipairs({ "ERROR", "WARN", "INFO", "DEBUG", "TRACE" }) do
+						vim.api.nvim_set_hl(0, "Notify"..lvl.."Border", { link = "NotifyBorderUnified" })
+						vim.api.nvim_set_hl(0, "Notify"..lvl.."Body", { link = "NotifyBodyUnified" })
+						-- vim.api.nvim_set_hl(0, "Notify"..lvl.."Title", { link = "NotifyBodyUnified" })
+					end
+				end
+				set_notify_highlights()
+				vim.api.nvim_create_autocmd("ColorScheme", {
+					group = vim.api.nvim_create_augroup("NotifyHighlightsFix", { clear = true }),
+					callback = set_notify_highlights,
+				})
+			end,
+		},
 		opts = {
 			cmdline = {
 				enable = true,
@@ -66,17 +104,34 @@ return {
 					size = { width = "80%", height = "auto" },
 				},
 			},
+			views = {
+				popup = {
+					backend = "popup",
+					win_options = {
+						winhighlight = {
+							Normal = "Normal",
+							FloatBorder = "Normal"
+						}
+					}
+
+				}
+			},
 			messages = {
-				enbale = true,
+				enable = true,
 				view = "notify",
 				view_error = "notify",
 				view_warn = "notify",
-				view_history = "messages",
+				view_history = "popup",
 				view_search = "virtualtext",
+			},
+			commands = {
+				history = { view = "popup" },
+				last = { view = "popup" },
+				errors = { view = "popup" },
 			},
 			popupmenu =  {
 				enable = true,
-				backend = "nui",
+				-- backend = "popup",
 			},
 			presets =  {
 				bottom_search = false,
@@ -98,7 +153,10 @@ return {
 						vim.g._noice_enabled = false
 					end
 				end,
-			}
+			},
+			{ "<leader>nh", function() require("noice").cmd("history") end, mode = "n", silent = true },
+			{ "<leader>nl", function() require("noice").cmd("last") end, mode = "n", silent = true },
+			{ "<leader>ne", function() require("noice").cmd("errors") end, mode = "n", silent = true },
 		},
 	},
 }
