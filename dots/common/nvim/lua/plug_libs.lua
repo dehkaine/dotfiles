@@ -19,6 +19,8 @@ require("lazy").setup({
 		{ import = "themes.statusline" },
 		-- interaction
 		{ import = "interaction.cursor" },
+		{ import = "interaction.jump" },
+		{ import = "interaction.marks" },
 		-- plugins
 		{ import = "plugins.git" },
 		{ import = "plugins.coc" },

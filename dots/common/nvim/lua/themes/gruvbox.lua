@@ -16,6 +16,9 @@ return {
 			vim.opt.guicursor = "n-v-c:block-Cursor,i-ci-ve:ver25,r-cr:hor20"
 			vim.api.nvim_set_hl(0, "Cursor", { bg = "#ffcc00", fg = "#000000" })
 
+			vim.api.nvim_set_hl(0, "Search",    { bg = "#D3869B", fg = "#000000" })
+			vim.api.nvim_set_hl(0, "CurSearch", { bg = "#ffcc00", fg = "#000000" })
+
 			-- lCursor color（insert mode）
 			-- vim.api.nvim_set_hl()
 		end,

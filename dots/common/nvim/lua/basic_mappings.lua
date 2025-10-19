@@ -59,14 +59,18 @@ map("x", "<leader>tt", [[:s/    /\t/g<CR>]],  { noremap = true })
 -- Fold toggle
 map("n", "<leader>z", "za", ns)
 
--- Insert a new line below and switch to insert mode
+-- Insert a new line below and back to normal mode
 map("n", "<leader>o", "o<Esc>", ns)
+map("n", "<leader>O", "O<Esc>", ns)
 
 -- Insert: Insert {} at the end of the line and switch to the previous line to continue editing (preserve original macro sequence)
 map("i", "<C-b>", "<ESC>A {}<ESC>i<CR><ESC>ko", { noremap = true })
 
 -- Insert: Quickly start a new line in insert mode
 map("i", "<C-CR>", "<Esc>o", { noremap = true })
+
+-- Insert: Quickly move cursor to last
+map("i", "<C-a>", "<Esc>A", { noremap = true })
 
 -- black hole register for delete and change
 map("n", "<leader>dd", [["_dd]], ns)
