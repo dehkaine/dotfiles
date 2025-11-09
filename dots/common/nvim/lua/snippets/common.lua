@@ -19,14 +19,12 @@ i_map( 0, "(", "()<Esc>i" )
 i_map( 0, "[", "[]<Esc>i" )
 i_map( 0, "{", "{}<Esc>i" )
 
-i_map( 2, "\"", "\"\",<Esc>hi" )
+i_map( 2, "\"", "\"\", <++><Esc>6hi" )
 i_map( 2, "(", "(),<Esc>hi" )
 i_map( 2, "[", "[],<Esc>hi" )
 i_map( 2, "{", "{},<Esc>hi" )
-
 i_map( 2, ".(", "(\"\"),<Esc>hhi" )
 
--- i_map( ",", "<Esc>A,<Esc>" )
 
 -- jump to <++> placeholder
 -- i_map( "f", [[<Esc>/<++><CR>:nohlsearch<CR>"_c4l]] )

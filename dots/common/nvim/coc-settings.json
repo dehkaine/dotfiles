@@ -46,5 +46,15 @@
 		"d": "delete",
 		"y": "copyFile",
 		"p": "pasteFile"
-	}
+	},
+	// godot
+	"godot.host": "127.0.0.1",
+	"godot.port": 6005,
+	"semanticTokens.incrementTypes": [
+		"variable",
+		"string",
+		"parameter"
+	],
+	"semanticTokens.enable": true,
+	"semanticTokens.highlightPriority": 3
 }

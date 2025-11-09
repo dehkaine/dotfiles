@@ -10,6 +10,7 @@ return {
 		init = function()
 			vim.g.coc_global_extensions = {
 				"coc-rust-analyzer",
+				"coc-gdscript",
 				"coc-json",
 				"coc-toml",
 				"coc-yaml",

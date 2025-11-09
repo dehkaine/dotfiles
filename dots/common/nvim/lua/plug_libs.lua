@@ -25,6 +25,8 @@ require("lazy").setup({
 		{ import = "plugins.git" },
 		{ import = "plugins.coc" },
 		{ import = "plugins.fzf" },
+		{ import = "plugins.treesitter" },
+		{ import = "plugins.godot" },
 		-- render
 		{ import = "render.markdown" },
 	},
@@ -34,7 +36,7 @@ require("lazy").setup({
 
 vim.o.lazyredraw = false
 
--- vim.cmd("colorscheme deus")
--- vim.api.nvim_set_hl(0, "lCursor",  { fg = "#ebbc4e", bg = "#ffcc00" })
+-- vim.api.nvim_set_hl(0, "GDScriptProperty", { fg = "#7FA093", bold = false })
+vim.api.nvim_set_hl(0, "GDTest", { fg = "#FF0000", bold = false })
 
 
