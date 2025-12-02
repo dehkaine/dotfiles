@@ -49,7 +49,7 @@ return {
 									['S'] = 'select_and_prev',
 									['.'] = 'explorer_up',
 									['<Space>g'] = 'picker_grep',
-									['F'] = 'explorer_focus',
+									['f'] = 'explorer_focus',
 									['O'] = 'explorer_open',
 								}
 							}

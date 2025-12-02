@@ -59,8 +59,10 @@ return {
 			-- Completion
 			-- map("i", "<Up>",    [[coc#pum#visible() ? coc#pum#prev(1) : "\<Up>"]],      cmplOpts)
 			-- map("i", "<Down>",  [[coc#pum#visible() ? coc#pum#next(1) : "\<Down>"]],    cmplOpts)
-			map("i", "<Left>", [[coc#pum#visible() ? coc#pum#cancel() : "\<Left>"]],   cmplOpts)
-			map("i", "<Right>", [[coc#pum#visible() ? coc#pum#confirm() : "\<Right>"]], cmplOpts)
+			-- map("i", "<Left>", [[coc#pum#visible() ? coc#pum#cancel() : "\<Left>"]],   cmplOpts)
+			-- map("i", "<Right>", [[coc#pum#visible() ? coc#pum#confirm() : "\<Right>"]], cmplOpts)
+			map("i", "<Right>", [[coc#pum#visible() ? coc#pum#cancel() : "\<Right>"]],   cmplOpts)
+			map("i", "<Tab>", [[coc#pum#visible() ? coc#pum#confirm() : "\<Tab>"]], cmplOpts)
 
 			--
 			-- ==========  Highlighting & Signature  ==========

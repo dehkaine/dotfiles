@@ -3,7 +3,7 @@ return{
 		"ggandor/leap.nvim",
 		event = "VeryLazy",
 		config = function()
-			require("leap").add_default_mappings()
+			-- require("leap").add_default_mappings()
 			local function as_ft(key_args)
 				local common = {
 					inputlen = 1,

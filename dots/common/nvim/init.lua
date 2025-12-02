@@ -16,9 +16,3 @@ require("themes.terminal_colors")
 
 -- plugins
 require("plug_libs")
-
--- vim.api.nvim_create_autocmd({"BufReadPost","BufNewFile"}, {
---   callback = function()
---     vim.cmd("TSBufEnable highlight")
---   end,
--- })

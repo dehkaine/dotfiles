@@ -22,6 +22,8 @@ prepend_rules = [
 	{ name = "*.json", use = "text" },
 	{ name = "*.md", use = "text" },
 	{ name = "*.lua", use = "text" },
+	{ name = "*.css", use = "text" },
+	{ name = "*.js", use = "text" },
 	{ mime = "text/*", use = "text" }
 ]
 

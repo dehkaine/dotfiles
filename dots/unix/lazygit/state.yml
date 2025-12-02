@@ -1,8 +1,8 @@
 lastupdatecheck: 0
 recentrepos:
     - /Users/kouteki/dotfiles
-    - /Users/kouteki/CodeWork/Rust/tako
     - /Users/kouteki/.hammerspoon
+    - /Users/kouteki/CodeWork/Rust/tako
 startuppopupversion: 5
 didshowhunkstaginghint: true
 lastversion: 0.55.1
