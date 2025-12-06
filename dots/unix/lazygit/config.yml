@@ -40,8 +40,9 @@ gui:
     '^feature/': '#B6AB8F'
 
   authorColors:
-    'Dean': '#89A398'
-    '*': '#85B0AA'
+    # 'DehKaine': '#B7B947'
+    'DehKaine': '#83A598'
+    '*': '#B7B947'
 
 git:
   commit:
