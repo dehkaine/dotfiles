@@ -1,57 +1,58 @@
+# promptToReturnFromSubprocess: false
+
 gui:
   language: en
   sidePanelWidth: 0.45
   expandFocusedSidePanel: true
   expandedSidePanelWeight: 4
-  showFileIcons: true
   theme:
     activeBorderColor:
-      - '#B7B947'
+      - '#c7f0ad'
       - bold
     inactiveBorderColor:
-      - '#928374'
+      - '#899aa6'
     searchingActiveBorderColor:
-      - '#FABD2F'
+      - '#83C092'
       - bold
     optionsTextColor:
       - '#6c757c'
     selectedLineBgColor:
-      - '#161819'
+      - '#1f252c'
     inactiveViewSelectedLineBgColor:
-      - '#242728'
+      - '#6c757c'
       - bold
+    # Foreground color of copied commit
     cherryPickedCommitFgColor:
-      - '#D3869B'
+      - '#85B0AA'
+    # Background color of copied commit
     cherryPickedCommitBgColor:
-      - '#D3869B'
+      - '#85B0AA'
     markedBaseCommitFgColor:
-      - '#D3869B'
+      - '#85B0AA'
     markedBaseCommitBgColor:
-      - '#FABD2F'
+      - '#DBBC7F'
     unstagedChangesColor:
-      - '#E45842'
+      - '#E67E80'
     defaultFgColor:
-      - '#B6AB8F'
-
-  branchColorPatterns:
-    '^DEV': '#B7B947'
-    'main': '#B7B947'
-    'develop': '#B7B947'
-    '^feature/': '#B6AB8F'
-
+      - '#9CBDB8'
   authorColors:
-    'Dean': '#89A398'
+    'Dean': '#A7ABED'
     '*': '#85B0AA'
 
 git:
   commit:
     autoWrapCommitMessage: true
+  paging: 
+    pager: delta --paging=never
+    # pager: "cat"
+    # pager: ""
+
 
 keybinding:
   universal:
     return: <esc>
-    prevTab: 'H'
-    nextTab: 'L'
+    prevTab: '<'
+    nextTab: '>'
     nextScreenMode: '*'
     prevScreenMode: '#'
 
@@ -62,8 +63,8 @@ keybinding:
     prevBlock-alt2: ''
     nextBlock-alt2: ''
 
-    scrollLeft: '<'
-    scrollRight: '>'
+    scrollLeft: 'H'
+    scrollRight: 'L'
     scrollUpMain-alt2: ''
     scrollDownMain-alt2: ''
     gotoTop: '^'
