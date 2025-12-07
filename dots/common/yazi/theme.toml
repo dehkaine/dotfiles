@@ -1,10 +1,9 @@
 [flavor]
 dark = "everforest-medium"
-# dark = "modal-machina"
+# dark = "gruvbox-dk-customize"
 # dark = "dracula"
 
 [mgr]
-# border_symbol = "│"
 border_symbol = " "
 border_style = { fg = "#202324" }
 cwd = { fg = "#7fbbb3" }
@@ -12,8 +11,8 @@ hovered = { fg = "#202324", bg = "#8DA26C", bold = true }
 
 [status]
 overall       = { fg = "#948A79", bg = "#272A2B" }
-sep_left      = { open = "", close = "" }
-sep_right     = { open = "",  close = "" }
+sep_left      = { open = " ", close = "" }
+sep_right     = { open = "",  close = " " }
 
 progress_label  = { bold = true }
 progress_normal = { fg = "#7fbbb3", bg = "#232a2e" }
@@ -26,7 +25,7 @@ perm_exec  = { fg = "#7fbbb3" }   # x
 perm_sep   = { fg = "#2d353b" }   # s-ish
 
 [mode]
-normal_main  = { fg = "#282828", bg = "#718D83", bold = true }
+normal_main  = { fg = "#282828", bg = "#7DADA5", bold = true }
 select_main  = { fg = "#282828", bg = "#D3869B", bold = true }
 unset_main   = { bg = "#e67e80", bold = true }
 normal_alt  = { fg = "#83A598", bg = "#303436" }
@@ -34,10 +33,10 @@ select_alt  = { fg = "#D3869B", bg = "#333739" }
 unset_alt   = { fg = "#d3c6aa", bg = "#e67e80" }
 
 [tabs]
-active = { fg = "#282828", bg = "#778C83", bold = true }
-inactive = { fg = "#928A7B", bg = "#2A2D2E" }
+active = { fg = "#282828", bg = "#81B18B", bold = true }
+inactive = { fg = "#8DA26C", bg = "#2A2D2E" }
 sep_inner = { open = "", close = "" }
-sep_outer = { open = "", close = "" }
+sep_outer = { open = " ", close = " " }
 
 [marker]
-selected = { fg = "#ffffff", bg = "#98BC83" }
+# selected = { fg = "#ffffff", bg = "#98BC83" }

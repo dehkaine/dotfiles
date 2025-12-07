@@ -18,6 +18,7 @@ require("lazy").setup({
 		{ import = "themes.gruvbox" },
 		{ import = "themes.statusline" },
 		-- interaction
+		{ import = "interaction.alignment" },
 		{ import = "interaction.cursor" },
 		{ import = "interaction.jump" },
 		{ import = "interaction.marks" },

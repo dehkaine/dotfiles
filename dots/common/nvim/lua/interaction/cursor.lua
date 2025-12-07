@@ -18,9 +18,9 @@ return {
 		"declancm/cinnamon.nvim",
 		opts = {
 			keymaps = { basic = true, extra = true },
-			options = {
-				mode = "cursor",
-				delay = 4,
+			options     = {
+				mode      = "cursor",
+				delay     = 4,
 				step_size = { vertical = 1, horizontal = 2 },
 				max_delta = { line = false, colum = false, time = 1000 }
 			}
@@ -39,7 +39,7 @@ return {
 			 map({"n", "v"}, "<leader>m", mc.toggleCursor)
 
 			 -- Enable/Disable Multi-Cursor
-			 map({"n", "v"}, "<Esc>", function()
+			 map({"n", "v"}, "<leader><leader>m", function()
 				if not mc.cursorsEnabled() then
 					mc.enableCursors()
 				elseif mc.hasCursors() then

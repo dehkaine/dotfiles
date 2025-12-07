@@ -17,7 +17,7 @@ return{
 				return vim.tbl_deep_extend("keep", common, key_args)
 			end
 
-			local clever = require("leap.user").with_traversal_keys
+			local clever   = require("leap.user").with_traversal_keys
 			local clever_f = clever("f", "F")
 			local clever_t = clever("t", "T")
 
